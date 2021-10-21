@@ -16,7 +16,7 @@ function umn() {
     if (isNaN(a)==true || isNaN(b)==true) 
         alert('Вводимые данные некорректны');
     else
-        document.getElementById('clickk').innerHTML =c;
+        document.getElementById('rsl').innerHTML =c;
     
 }
 window.addEventListener('DOMContentLoaded', function (umn) {
