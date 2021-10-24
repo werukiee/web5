@@ -16,11 +16,11 @@ function umn() {
     if (isNaN(a)==true || isNaN(b)==true) 
         alert('Вводимые данные некорректны');
     else
-        document.getElementById('rsl').innerHTML =c;
+        document.getElementById('result').innerHTML =c;
     
 }
 window.addEventListener('DOMContentLoaded', function (umn) {
     console.log("DOM fully loaded and parsed");
-    let d = document.getElementById("result");
+    let d = document.getElementById("but");
     d.addEventListener("click", umn);
  });
