@@ -22,5 +22,5 @@ function umn() {
 window.addEventListener('DOMContentLoaded', function (umn) {
     console.log("DOM fully loaded and parsed");
     let d = document.getElementById("result");
-    d.addEventListener("rsl", umn);
+    d.addEventListener("click", umn);
  });
