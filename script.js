@@ -7,18 +7,21 @@ function umn() {
     if( a<0||b<0)
     {
         alert('Вводить можно только положительные числа');
-        document.getElementById('result').innerHTML = "Вводимые данные некорректны";
+        let str = "Ошибка!";
+        document.getElementById('result').innerHTML = str;
     }
     if(a===0||b===0)   
     {
         alert('Введите значения!');
-        document.getElementById('result').innerHTML = "Вводимые данные некорректны";
+        let str = "Ошибка!";
+        document.getElementById('result').innerHTML = str;
     }
 
     if (isNaN(a)==true || isNaN(b)==true) 
     {
         alert('Вводимые данные некорректны');
-        document.getElementById('result').innerHTML = "Вводимые данные некорректны";
+        let str = "Ошибка!";
+        document.getElementById('result').innerHTML = str;
     }
     else
         document.getElementById('result').innerHTML =c;
