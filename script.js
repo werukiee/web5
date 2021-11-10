@@ -6,7 +6,7 @@ function umn() {
 
     if( a<0||b<0)
     {
-        alert('Вводить можно только положительные числа числа'); 
+        alert('Вводить можно только положительные числа'); 
     }
     if(a===0||b===0)   
     {
@@ -15,6 +15,7 @@ function umn() {
 
     if (isNaN(a)==true || isNaN(b)==true) 
         alert('Вводимые данные некорректны');
+    document.getElementById('result').innerHTML = "Вводимые данные некорректны";
     else
         document.getElementById('result').innerHTML =c;
     
