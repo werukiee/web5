@@ -6,16 +6,20 @@ function umn() {
 
     if( a<0||b<0)
     {
-        alert('Вводить можно только положительные числа'); 
+        alert('Вводить можно только положительные числа');
+        document.getElementById('result').innerHTML = "Вводимые данные некорректны";
     }
     if(a===0||b===0)   
     {
         alert('Введите значения!');
+        document.getElementById('result').innerHTML = "Вводимые данные некорректны";
     }
 
     if (isNaN(a)==true || isNaN(b)==true) 
+    {
         alert('Вводимые данные некорректны');
-    document.getElementById('result').innerHTML = "Вводимые данные некорректны";
+        document.getElementById('result').innerHTML = "Вводимые данные некорректны";
+    }
     else
         document.getElementById('result').innerHTML =c;
     
