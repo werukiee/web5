@@ -4,20 +4,7 @@ function umn() {
 
     var c = a * b;
 
-    if( a<0||b<0)
-    {
-        alert('Вводить можно только положительные числа');
-        let str = "Ошибка!";
-        document.getElementById('result').innerHTML = str;
-    }
-    if(a===0||b===0)   
-    {
-        alert('Введите значения!');
-        let str = "Ошибка!";
-        document.getElementById('result').innerHTML = str;
-    }
-
-    if (isNaN(a)==true || isNaN(b)==true) 
+    if( a<0||b<0||a===0||b===0||isNaN(a)==true || isNaN(b)==true)
     {
         alert('Вводимые данные некорректны');
         let str = "Ошибка!";
@@ -25,7 +12,6 @@ function umn() {
     }
     else
         document.getElementById('result').innerHTML =c;
-    
 }
 window.addEventListener('DOMContentLoaded', function (umn) {
     console.log("DOM fully loaded and parsed");
